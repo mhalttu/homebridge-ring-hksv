@@ -10,6 +10,7 @@
 
 ## Unreleased
 
+- Fix Ring motion and doorbell push decryption when notification headers contain extra parameters by using the patched Ring client shipped with Ring MQTT 5.9.3.
 - Add an HKSV recording stall watchdog so motion-triggered FFmpeg processes are stopped if they stop producing fragmented MP4 packets.
 - Stop HKSV recording live calls immediately when HomeKit closes a recording stream, and cancel queued recording requests that are already closed before starting FFmpeg. This prevents stale HKSV FFmpeg processes from accumulating after abandoned recording sessions.
 
